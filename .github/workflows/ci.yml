@@ -15,7 +15,7 @@ jobs:
       - name: Installation de Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
       
       - name: Installation des dépendances
         run: |
@@ -23,4 +23,4 @@ jobs:
       
       - name: Exécution des tests Jest
         run: |
-          npm test
+          npx jest
