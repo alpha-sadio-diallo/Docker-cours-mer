@@ -1,0 +1,25 @@
+{
+  "name": "calculator-api",
+  "version": "1.0.0",
+  "description": "API REST de calculatrice en JavaScript avec Docker et Jest",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "calculator",
+    "api",
+    "rest",
+    "docker",
+    "jest"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
