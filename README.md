@@ -40,7 +40,30 @@ npm install
 docker compose up
 ```
 
-L'API sera accessible à `http://localhost:3000`
+L'API sera accessible à `http://localhost:8000`
+
+### Monitoring
+
+Le monitoring est disponible avec Prometheus et Grafana via Docker Compose.
+
+- API : http://localhost:8000
+- Prometheus : http://localhost:9090
+- Grafana : http://localhost:3000 (login : `admin`, mot de passe : `admin`)
+
+#### Métriques exposées
+- `calculator_request_count_total`
+- `calculator_request_duration_seconds`
+- métriques système par défaut Prometheus
+
+#### Endpoint métriques
+```
+GET /metrics
+```
+
+#### Démarrage du monitoring
+```bash
+docker compose up
+```
 
 ### Exécuter les tests
 
