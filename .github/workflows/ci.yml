@@ -22,5 +22,5 @@ jobs:
           npm install
       
       - name: Exécution des tests Jest
-        run: |
-          npx jest
+        run: |          
+          npm test
